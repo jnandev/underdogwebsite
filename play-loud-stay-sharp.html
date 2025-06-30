@@ -2,185 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Play Loud, Stay Sharp – Underdog Agency</title>
-
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-
   <style>
-    .belief-article {
-      max-width: 900px;
-      margin: 140px auto 80px;
-      padding: 0 20px;
-      line-height: 1.8;
+    .hero-banner {
+      background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    .hero-banner h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px 40px;
+      border-radius: 8px;
+    }
+    .section {
+      padding: 80px 40px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
       color: #f1f1f1;
     }
-
-    .belief-article h1 {
-      font-size: 2.8rem;
-      font-weight: 800;
+    .section h2 {
+      font-size: 2.5rem;
       margin-bottom: 20px;
     }
-
-    .belief-article img {
-      width: 100%;
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+    .section img {
+      max-width: 100%;
       border-radius: 12px;
-      margin: 30px 0;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
     }
-
-    .belief-article blockquote {
-      background-color: #111;
-      padding: 20px 30px;
-      border-left: 4px solid #888;
-      margin: 40px 0;
-      font-style: italic;
-      color: #ccc;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-top: 40px;
-      text-decoration: none;
-      color: #ccc;
-      font-size: 1rem;
-      border-bottom: 1px solid transparent;
-      transition: all 0.3s ease;
-    }
-
-    .back-link:hover {
+    a {
       color: #fff;
-      border-color: #fff;
+      text-decoration: none;
     }
-
-    body.light-mode .belief-article {
-      color: #111;
-    }
-
-    body.light-mode .belief-article blockquote {
-      background: #f1f1f1;
-      color: #333;
-      border-left: 4px solid #999;
-    }
-
-    body.light-mode .back-link {
-      color: #333;
-    }
-
-    body.light-mode .back-link:hover {
-      color: #000;
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-
-  <header id="navbar">
-    <div class="navbar-container">
-      <div class="logo-left">.Underdog</div>
-      <div class="logo-center">
-        <img src="underdog.jpeg" alt="Underdog Logo" />
-      </div>
-      <div class="right-group">
-        <nav>
-          <a href="index.html#hero">Home</a>
-          <a href="services.html">Services</a>
-          <a href="philosophy.html">Philosophy</a>
-          <a href="index.html#blog">Blog</a>
-        </nav>
-        <label class="switch">
-          <input type="checkbox" id="theme-toggle">
-          <span class="slider"></span>
-        </label>
-      </div>
-    </div>
+  <header class="navbar-container">
+    <div class="logo-left"><a href="index.html">.Underdog</a></div>
   </header>
 
-  <section class="belief-article" data-aos="fade-up">
+  <section class="hero-banner" data-aos="fade">
     <h1>Play Loud, Stay Sharp</h1>
-    <p>
-      At Underdog, we believe brands shouldn’t whisper — they should **roar**. 
-      “Play Loud, Stay Sharp” is our anthem for bold creativity backed by relentless discipline. 
-      We’re not here to follow rules. We’re here to rewrite them — with a head held high and eyes locked on precision.
-    </p>
-
-    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1000&q=80" alt="Play Loud Stay Sharp" />
-
-    <p>
-      Loud doesn’t mean noisy. It means unapologetic. Whether it’s a campaign, a product reveal, or a brand story — 
-      we inject emotion, energy, and originality into every move. But behind the boldness lies a razor-sharp strategy. 
-      Because creativity without purpose is just chaos.
-    </p>
-
-    <blockquote>
-      "The best work feels like rebellion — and functions like clockwork."
-    </blockquote>
-
-    <p>
-      We encourage our clients to take the mic, crank the volume, and own the spotlight. But we don’t forget to **stay sharp**. 
-      Every color, word, interaction, and layout is calibrated. It's creative freedom with strategic finesse.
-    </p>
-
-    <img src="https://images.unsplash.com/photo-1582745171600-a12c489f2e5d?auto=format&fit=crop&w=1000&q=80" alt="Creative Discipline" />
-
-    <p>
-      We train like athletes, think like artists, and execute like surgeons. It’s this balance of **play** and **precision** that helps brands not only turn heads — but leave marks. 
-    </p>
-
-    <p>
-      “Play Loud, Stay Sharp” is not just a mantra — it’s a **mindset**. It’s how underdogs win.
-    </p>
-
-    <a class="back-link" href="philosophy.html">&larr; Back to Philosophy</a>
   </section>
 
-  <!-- Footer -->
+  <section class="section" data-aos="fade-up">
+    <h2>Creative Agility, Strategic Precision</h2>
+    <p>We believe that speed and smarts go hand in hand. Our team thrives on creative experimentation—always grounded in insight, always delivered with clarity and intent.</p>
+    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80" alt="Creative Focused Team" />
+  </section>
+
+  <section class="section" data-aos="fade-up" data-aos-delay="300">
+    <h2>How We Move:</h2>
+    <p><strong>⚡ Fast Execution</strong> — We get ideas off the ground quickly<br/>
+       <strong>🔍 Sharp Thinking</strong> — Every action is backed by strategy<br/>
+       <strong>🎨 Loud Creative</strong> — Messaging that cuts through the noise</p>
+  </section>
+
   <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-left">
-        <p>Contact us: <a href="mailto:hello@underdog.agency">hello@underdog.agency</a></p>
-      </div>
-      <div class="footer-right">
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-    </div>
+    <p>© 2025 Underdog Agency · <a href="index.html">Back to Home</a></p>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-
-    const toggle = document.getElementById("theme-toggle");
-    const currentTheme = localStorage.getItem("theme");
-
-    if (currentTheme === "light") {
-      document.body.classList.add("light-mode");
-      toggle.checked = true;
-    }
-
-    toggle.addEventListener("change", () => {
-      if (toggle.checked) {
-        document.body.classList.add("light-mode");
-        localStorage.setItem("theme", "light");
-      } else {
-        document.body.classList.remove("light-mode");
-        localStorage.setItem("theme", "dark");
-      }
-    });
-
-    window.addEventListener("scroll", () => {
-      const nav = document.getElementById("navbar");
-      if (window.scrollY > 30) {
-        nav.classList.add("scrolled");
-      } else {
-        nav.classList.remove("scrolled");
-      }
-    });
-  </script>
+  <script>AOS.init({ once: true, duration: 1000 });</script>
 </body>
 </html>
