@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Story Over Hype | Underdog Agency</title>
+
+  <!-- Fonts & Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="navbar">
+    <div class="navbar-container">
+      <div class="logo-left">.Underdog</div>
+      <div class="logo-center">
+        <img src="underdog.jpeg" alt="Underdog Logo" />
+      </div>
+      <div class="right-group">
+        <nav>
+          <a href="index.html#hero">Home</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#philosophy">Philosophy</a>
+          <a href="index.html#blog">Blog</a>
+        </nav>
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <section class="blog-article">
+    <h1 data-aos="fade-up">Story Over Hype</h1>
+    <div class="meta" data-aos="fade-up" data-aos-delay="200">Underdog Philosophy · June 2025</div>
+    
+    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80" alt="Narrative Power" style="width:100%; border-radius:12px; margin: 40px 0;" data-aos="fade-up" data-aos-delay="400"/>
+
+    <p data-aos="fade-up" data-aos-delay="500">
+      In a world obsessed with going viral, we believe in going vital. While others chase trends and hashtags, we craft narratives that endure. At Underdog, we don’t just sell — we tell. Because a good story doesn't fade when the algorithm shifts.
+    </p>
+
+    <p data-aos="fade-up" data-aos-delay="600">
+      Storytelling is more than just a marketing tactic. It’s the blueprint for identity, emotion, and memory. Stories are why your customers care. Stories create cult-like followings, build timeless brands, and ignite communities that move mountains.
+    </p>
+
+    <blockquote data-aos="fade-up" data-aos-delay="700">
+      “People will forget what you said. People will forget what you did. But people will never forget how you made them feel.” — Maya Angelou
+    </blockquote>
+
+    <p data-aos="fade-up" data-aos-delay="800">
+      Whether it’s a founder’s journey, a product origin, or a purpose-driven mission — we extract the emotional essence and amplify it. We’re not here for the hype cycle. We’re here to make you unforgettable.
+    </p>
+
+    <img src="https://images.unsplash.com/photo-1603573351451-6bd7d2b6e204?auto=format&fit=crop&w=1200&q=80" alt="Legacy over trends" style="width:100%; border-radius:12px; margin: 40px 0;" data-aos="fade-up" data-aos-delay="900"/>
+
+    <p data-aos="fade-up" data-aos-delay="1000">
+      Hype fades. Stories echo. Let’s build a brand that lasts beyond launch day — one paragraph at a time.
+    </p>
+
+    <a href="index.html#philosophy" class="back-link" data-aos="fade-up" data-aos-delay="1100">← Back to Philosophy</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>Contact us: <a href="mailto:hello@underdog.agency">hello@underdog.agency</a></p>
+      </div>
+      <div class="footer-right">
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    const toggle = document.getElementById("theme-toggle");
+    const currentTheme = localStorage.getItem("theme");
+
+    if (currentTheme === "light") {
+      document.body.classList.add("light-mode");
+      toggle.checked = true;
+    }
+
+    toggle.addEventListener("change", () => {
+      if (toggle.checked) {
+        document.body.classList.add("light-mode");
+        localStorage.setItem("theme", "light");
+      } else {
+        document.body.classList.remove("light-mode");
+        localStorage.setItem("theme", "dark");
+      }
+    });
+  </script>
+</body>
+</html>

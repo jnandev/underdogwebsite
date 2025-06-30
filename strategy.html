@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Strategy – Underdog Agency</title>
+
+  <!-- Fonts + Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- Internal Styles -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #000;
+      color: #f1f1f1;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      padding: 20px 40px;
+      text-align: left;
+    }
+
+    .logo-left a {
+      font-size: 1.8rem;
+      font-weight: 800;
+      text-decoration: none;
+      color: #f1f1f1;
+    }
+
+    .hero-banner {
+      background-image: url('https://images.unsplash.com/photo-1600488993887-20b7c1f99c51?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero-banner h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px 40px;
+      border-radius: 8px;
+    }
+
+    .section {
+      padding: 80px 40px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    .section img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+
+    a {
+      color: #f1f1f1;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      padding: 40px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #aaa;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-left">
+      <a href="index.html">.Underdog</a>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero-banner" data-aos="fade">
+    <h1>Strategy With Firepower</h1>
+  </section>
+
+  <!-- Section 1 -->
+  <section class="section" data-aos="fade-up">
+    <h2>Precision Moves. Long-Term Impact.</h2>
+    <p>We don’t just craft plans — we architect bold brand strategy that aligns with culture, business goals, and timing. Every move is mapped for momentum.</p>
+    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80" alt="Brand Strategy">
+  </section>
+
+  <!-- Section 2 -->
+  <section class="section" data-aos="fade-up" data-aos-delay="300">
+    <h2>What’s Included</h2>
+    <p><strong>🔍 Brand Positioning</strong> – What you stand for and why you matter<br />
+       <strong>🗺 Strategic Roadmaps</strong> – Clarity from launch to long-term<br />
+       <strong>📈 Growth Architecture</strong> – Systems built for scale, not just hype</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Underdog Agency · <a href="index.html">Back to Home</a></p>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>

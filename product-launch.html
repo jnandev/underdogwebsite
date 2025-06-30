@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Launch – Underdog Agency</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="navbar">
+    <div class="navbar-container">
+      <div class="logo-left">.Underdog</div>
+      <div class="logo-center">
+        <a href="index.html"><img src="underdog.jpeg" alt="Underdog Logo" /></a>
+      </div>
+      <div class="right-group">
+        <nav>
+          <a href="index.html#hero">Home</a>
+          <a href="services.html">Services</a>
+          <a href="index.html#philosophy">Philosophy</a>
+          <a href="index.html#blog">Blog</a>
+        </nav>
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Launch Page -->
+  <section class="hero" style="padding-top: 140px;">
+    <div class="hero-lines">
+      <div class="hero-line" data-aos="fade-up">Product Launch</div>
+      <div class="subheading" data-aos="fade-up" data-aos-delay="300">
+        From stealth to spotlight — we shape, package, and launch products that punch above their weight.
+      </div>
+    </div>
+  </section>
+
+  <section class="services" style="padding-top: 60px;">
+    <div class="services-header">
+      <h2 data-aos="fade-up">Launches That Land</h2>
+      <p data-aos="fade-up" data-aos-delay="200">We design go-to-market strategies, brand messaging, and launch campaigns built to break through the noise.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+        <h3>Launch Playbook</h3>
+        <p>From teaser to full-throttle, we map out each stage of your launch journey — strategic, creative, and disruptive.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+        <h3>Market Entry Strategy</h3>
+        <p>We position your product to meet the market with clarity, urgency, and anticipation.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="800">
+        <h3>Campaign Execution</h3>
+        <p>We bring the launch to life across media with unforgettable storytelling and culture-tuned rollout plans.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Highlights -->
+  <section class="philosophy" style="padding-top: 80px;">
+    <div class="philosophy-grid">
+      <div class="belief" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://images.unsplash.com/photo-1625066786046-7a6208e8d259?auto=format&fit=crop&w=1200&q=80" alt="Product Launch Board" style="width:100%; border-radius: 8px; margin-bottom: 16px;">
+        <h3>Brand Before Broadcast</h3>
+        <p>We build foundations before the flash. Messaging and identity precede the megaphone.</p>
+      </div>
+      <div class="belief" data-aos="fade-up" data-aos-delay="400">
+        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1200&q=80" alt="Launch Strategy" style="width:100%; border-radius: 8px; margin-bottom: 16px;">
+        <h3>Moments Over Mediums</h3>
+        <p>We create peak moments that define launches — not just posts, but pauses that earn attention.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>Contact us: <a href="mailto:hello@underdog.agency">hello@underdog.agency</a></p>
+      </div>
+      <div class="footer-right">
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    // Theme persistence
+    const toggle = document.getElementById("theme-toggle");
+    const currentTheme = localStorage.getItem("theme");
+
+    if (currentTheme === "light") {
+      document.body.classList.add("light-mode");
+      toggle.checked = true;
+    }
+
+    toggle.addEventListener("change", () => {
+      if (toggle.checked) {
+        document.body.classList.add("light-mode");
+        localStorage.setItem("theme", "light");
+      } else {
+        document.body.classList.remove("light-mode");
+        localStorage.setItem("theme", "dark");
+      }
+    });
+
+    // Navbar scroll background
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 30) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>

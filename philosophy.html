@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Philosophy – Underdog Agency</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="navbar">
+    <div class="navbar-container">
+      <div class="logo-left"><a href="index.html">.Underdog</a></div>
+      <div class="logo-center">
+        <img src="underdog.jpeg" alt="Underdog Logo">
+      </div>
+      <div class="right-group">
+        <nav>
+          <a href="index.html#hero">Home</a>
+          <a href="services.html">Services</a>
+          <a href="philosophy.html">Philosophy</a>
+          <a href="index.html#blog">Blog</a>
+        </nav>
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <!-- Philosophy Section -->
+  <main class="philosophy" style="margin-top: 120px;">
+    <div class="philosophy-header">
+      <h2 data-aos="fade-up">We Think Like Underdogs</h2>
+      <p data-aos="fade-up" data-aos-delay="200">
+        We believe in bold storytelling, long games, and culture-shaping work that leaves a mark.
+      </p>
+    </div>
+    <div class="philosophy-grid">
+      <div class="belief" data-aos="fade-up" data-aos-delay="300">
+        <h3>Story Over Hype</h3>
+        <p>We don’t chase trends. We craft narratives that stick. Stories are what build empires.</p>
+      </div>
+      <div class="belief" data-aos="fade-up" data-aos-delay="500">
+        <h3>Deep, Not Wide</h3>
+        <p>Our work goes beneath the surface. It resonates, it roots itself in culture, and it grows.</p>
+      </div>
+      <div class="belief" data-aos="fade-up" data-aos-delay="700">
+        <h3>Built to Last</h3>
+        <p>We’re not in it for short-term hype. We build brand legacies with substance and staying power.</p>
+      </div>
+      <div class="belief" data-aos="fade-up" data-aos-delay="900">
+        <h3>Play Loud, Stay Sharp</h3>
+        <p>We move fast, think smart, and play creatively — with clarity, purpose, and precision.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>Contact us: <a href="mailto:hello@underdog.agency">hello@underdog.agency</a></p>
+      </div>
+      <div class="footer-right">
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    const toggle = document.getElementById("theme-toggle");
+    const currentTheme = localStorage.getItem("theme");
+
+    if (currentTheme === "light") {
+      document.body.classList.add("light-mode");
+      toggle.checked = true;
+    }
+
+    toggle.addEventListener("change", () => {
+      if (toggle.checked) {
+        document.body.classList.add("light-mode");
+        localStorage.setItem("theme", "light");
+      } else {
+        document.body.classList.remove("light-mode");
+        localStorage.setItem("theme", "dark");
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      nav.classList.toggle('scrolled', window.scrollY > 30);
+    });
+  </script>
+</body>
+</html>
