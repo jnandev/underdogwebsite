@@ -2,88 +2,124 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marketing – Underdog Agency</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marketing Services | Underdog Agency</title>
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS Animate On Scroll -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-  <style>
-    .hero-banner {
-      background-image: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1600&q=80');
-      background-size: cover;
-      background-position: center;
-      height: 60vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-    }
-    .hero-banner h1 {
-      font-size: 3rem;
-      font-weight: 800;
-      background: rgba(0, 0, 0, 0.6);
-      padding: 20px 40px;
-      border-radius: 8px;
-    }
-    .section {
-      padding: 80px 40px;
-      max-width: 1000px;
-      margin: auto;
-      text-align: center;
-      color: #f1f1f1;
-    }
-    .section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-    .section p {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      margin-bottom: 40px;
-    }
-    .section img {
-      max-width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-    }
-    a {
-      color: #fff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
 <body>
-  <header class="navbar-container">
-    <div class="logo-left"><a href="index.html">.Underdog</a></div>
+
+  <!-- Header -->
+  <header id="navbar">
+    <div class="navbar-container">
+      <div class="logo-left"><a href="index.html">.Underdog</a></div>
+      <div class="logo-center">
+        <img src="underdog.jpeg" alt="Underdog Logo" />
+      </div>
+      <div class="right-group">
+        <nav>
+          <a href="index.html#hero">Home</a>
+          <a href="services.html">Services</a>
+          <a href="philosophy.html">Philosophy</a>
+          <a href="index.html#blog">Blog</a>
+        </nav>
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
   </header>
 
-  <section class="hero-banner" data-aos="fade">
-    <h1>Marketing that Moves Culture</h1>
+  <!-- Hero Banner -->
+  <section class="hero service-hero" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1500&q=80'); background-size: cover; background-position: center;">
+    <div class="overlay">
+      <h1 data-aos="fade-up">Marketing That Moves</h1>
+      <p data-aos="fade-up" data-aos-delay="200">We create campaigns that connect, captivate, and convert.</p>
+    </div>
   </section>
 
-  <section class="section" data-aos="fade-up">
-    <h2>Campaigns that Stick. Stories that Sell.</h2>
-    <p>We don't just sell products — we build emotional connections. From storytelling to trend hacking, our marketing strategies create cultural moments that people actually want to be part of.</p>
-    <img src="https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?auto=format&fit=crop&w=1200&q=80" alt="Creative Marketing" />
+  <!-- Service Content -->
+  <section class="service-details">
+    <div class="container">
+      <h2 data-aos="fade-up">We Build Bold Brands</h2>
+      <p data-aos="fade-up" data-aos-delay="100">
+        Marketing isn't just about reach. It's about resonance. At Underdog, we help brands rise from noise with messaging that matters and storytelling that sticks.
+      </p>
+      <div class="image-block" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://images.unsplash.com/photo-1607082352274-00502e4b252b?auto=format&fit=crop&w=1200&q=80" alt="Marketing Impact">
+      </div>
+
+      <h3 data-aos="fade-up" data-aos-delay="300">How We Do It</h3>
+      <ul class="service-list" data-aos="fade-up" data-aos-delay="400">
+        <li>↳ Campaign Strategy & Execution</li>
+        <li>↳ Social Media Positioning</li>
+        <li>↳ Cultural & Trend-Driven Creative</li>
+        <li>↳ Community Building</li>
+        <li>↳ Data-Backed Performance Insights</li>
+      </ul>
+
+      <div class="image-block" data-aos="fade-up" data-aos-delay="500">
+        <img src="https://images.unsplash.com/photo-1581093588401-4cb7b2c8d0fc?auto=format&fit=crop&w=1200&q=80" alt="Marketing Strategy">
+      </div>
+
+      <p data-aos="fade-up" data-aos-delay="600">
+        Whether you're launching your first product or scaling your reach, our marketing strategies are crafted to make brands unforgettable — and unignorable.
+      </p>
+
+      <a href="contact.html" class="cta-button" data-aos="fade-up" data-aos-delay="700">Let's Collaborate →</a>
+    </div>
   </section>
 
-  <section class="section" data-aos="fade-up" data-aos-delay="300">
-    <h2>We Focus On:</h2>
-    <p><strong>⚡ Viral Content</strong> — Standout creative that sparks shares<br/>
-       <strong>📈 Growth Tactics</strong> — Data-backed strategy meets bold execution<br/>
-       <strong>🧠 Brand Positioning</strong> — Rooted in insights, delivered with clarity</p>
-  </section>
-
+  <!-- Footer -->
   <footer class="footer">
-    <p>© 2025 Underdog Agency · <a href="index.html">Back to Home</a></p>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>Contact us: <a href="mailto:hello@underdog.agency">hello@underdog.agency</a></p>
+      </div>
+      <div class="footer-right">
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>AOS.init({ once: true, duration: 1000 });</script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    // Theme toggle with persistence
+    const toggle = document.getElementById("theme-toggle");
+    const currentTheme = localStorage.getItem("theme");
+
+    if (currentTheme === "light") {
+      document.body.classList.add("light-mode");
+      toggle.checked = true;
+    }
+
+    toggle.addEventListener("change", () => {
+      if (toggle.checked) {
+        document.body.classList.add("light-mode");
+        localStorage.setItem("theme", "light");
+      } else {
+        document.body.classList.remove("light-mode");
+        localStorage.setItem("theme", "dark");
+      }
+    });
+
+    // Navbar scroll background
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      nav.classList.toggle('scrolled', window.scrollY > 30);
+    });
+  </script>
 </body>
 </html>
