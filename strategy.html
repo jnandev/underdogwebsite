@@ -2,46 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Strategy – Underdog Agency</title>
-
-  <!-- Fonts + Icons -->
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- AOS Animation Library -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-
-  <!-- Internal Styles -->
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #000;
-      color: #f1f1f1;
-      overflow-x: hidden;
-      scroll-behavior: smooth;
-    }
-
-    header {
-      padding: 20px 40px;
-      text-align: left;
-    }
-
-    .logo-left a {
-      font-size: 1.8rem;
-      font-weight: 800;
-      text-decoration: none;
-      color: #f1f1f1;
-    }
-
     .hero-banner {
-      background-image: url('https://images.unsplash.com/photo-1600488993887-20b7c1f99c51?auto=format&fit=crop&w=1600&q=80');
+      background-image: url('https://images.unsplash.com/photo-1581093801231-318d8a36ba4f?auto=format&fit=crop&w=1600&q=80');
       background-size: cover;
       background-position: center;
       height: 60vh;
@@ -51,7 +20,6 @@
       text-align: center;
       color: #fff;
     }
-
     .hero-banner h1 {
       font-size: 3rem;
       font-weight: 800;
@@ -59,88 +27,64 @@
       padding: 20px 40px;
       border-radius: 8px;
     }
-
     .section {
       padding: 80px 40px;
       max-width: 1000px;
       margin: auto;
       text-align: center;
+      color: #f1f1f1;
     }
-
     .section h2 {
       font-size: 2.5rem;
       margin-bottom: 20px;
     }
-
     .section p {
       font-size: 1.1rem;
       line-height: 1.7;
       margin-bottom: 40px;
     }
-
     .section img {
       max-width: 100%;
       border-radius: 12px;
       box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      margin-bottom: 20px;
     }
-
     a {
-      color: #f1f1f1;
+      color: #fff;
       text-decoration: none;
     }
-
     a:hover {
       text-decoration: underline;
-    }
-
-    footer {
-      padding: 40px;
-      text-align: center;
-      font-size: 0.95rem;
-      color: #aaa;
-      border-top: 1px solid #222;
     }
   </style>
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <div class="logo-left">
-      <a href="index.html">.Underdog</a>
-    </div>
+  <header class="navbar-container">
+    <div class="logo-left"><a href="index.html">.Underdog</a></div>
   </header>
 
-  <!-- Hero Banner -->
   <section class="hero-banner" data-aos="fade">
     <h1>Strategy With Firepower</h1>
   </section>
 
-  <!-- Section 1 -->
   <section class="section" data-aos="fade-up">
-    <h2>Precision Moves. Long-Term Impact.</h2>
-    <p>We don’t just craft plans — we architect bold brand strategy that aligns with culture, business goals, and timing. Every move is mapped for momentum.</p>
-   <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=80" alt="Team strategy session">
-
+    <h2>Fueling Brands with Direction and Precision</h2>
+    <p>At Underdog, strategy isn’t theory — it’s the engine. We combine sharp insights with cultural awareness to help brands find clarity, define positioning, and deploy smarter. It’s not about doing more. It’s about doing what matters.</p>
+    <img src="https://images.unsplash.com/photo-1602524203439-b4968c4c79c3?auto=format&fit=crop&w=1200&q=80" alt="Strategy Planning" />
   </section>
 
-  <!-- Section 2 -->
-  <section class="section" data-aos="fade-up" data-aos-delay="300">
-    <h2>What’s Included</h2>
-    <p><strong>🔍 Brand Positioning</strong> – What you stand for and why you matter<br />
-       <strong>🗺 Strategic Roadmaps</strong> – Clarity from launch to long-term<br />
-       <strong>📈 Growth Architecture</strong> – Systems built for scale, not just hype</p>
+  <section class="section" data-aos="fade-up" data-aos-delay="200">
+    <h2>What We Bring:</h2>
+    <p><strong>🎯 Strategic Frameworks</strong> — Proven models tailored for bold brands<br/>
+       <strong>📊 Data-Driven Decisions</strong> — Strategy rooted in insights, not guesswork<br/>
+       <strong>🌍 Cultural Intelligence</strong> — We position brands for global relevance</p>
   </section>
 
-  <!-- Footer -->
-  <footer>
+  <footer class="footer">
     <p>© 2025 Underdog Agency · <a href="index.html">Back to Home</a></p>
   </footer>
 
-  <!-- AOS Script -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-  </script>
+  <script>AOS.init({ once: true, duration: 1000 });</script>
 </body>
 </html>
