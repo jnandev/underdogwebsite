@@ -2,79 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Marketing – Underdog Agency</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <style>
+    .hero-banner {
+      background-image: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    .hero-banner h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px 40px;
+      border-radius: 8px;
+    }
+    .section {
+      padding: 80px 40px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+      color: #f1f1f1;
+    }
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+    .section img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <header id="navbar">
-    <div class="navbar-container">
-      <div class="logo-left"><a href="index.html">.Underdog</a></div>
-      <div class="logo-center">
-        <img src="underdog.jpeg" alt="Underdog Logo" />
-      </div>
-      <div class="right-group">
-        <nav>
-          <a href="index.html#hero">Home</a>
-          <a href="services.html">Services</a>
-          <a href="philosophy.html">Philosophy</a>
-          <a href="index.html#blog">Blog</a>
-        </nav>
-      </div>
-    </div>
+  <header class="navbar-container">
+    <div class="logo-left"><a href="index.html">.Underdog</a></div>
   </header>
 
-  <section class="service-detail hero-small">
-    <h1>Marketing</h1>
-    <p>Turning bold ideas into brand movements that stick.</p>
+  <section class="hero-banner" data-aos="fade">
+    <h1>Marketing that Moves Culture</h1>
   </section>
 
-  <section class="service-body">
-    <div class="service-block">
-      <img src="https://images.unsplash.com/photo-1612832021590-9fe0f2d7e84f?auto=format&fit=crop&w=1000&q=80" alt="Marketing Strategy">
-      <div>
-        <h2>Story Over Hype</h2>
-        <p>We don’t chase trends. We craft narratives that stick — stories are what build empires and drive connection. With storytelling as the foundation, we help brands earn emotional real estate in people’s lives.</p>
-      </div>
-    </div>
+  <section class="section" data-aos="fade-up">
+    <h2>Campaigns that Stick. Stories that Sell.</h2>
+    <p>We don't just sell products — we build emotional connections. From storytelling to trend hacking, our marketing strategies create cultural moments that people actually want to be part of.</p>
+    <img src="https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?auto=format&fit=crop&w=1200&q=80" alt="Creative Marketing" />
+  </section>
 
-    <div class="service-block reverse">
-      <img src="https://images.unsplash.com/photo-1564866657319-06af73a08c33?auto=format&fit=crop&w=1000&q=80" alt="Culture Building">
-      <div>
-        <h2>Deep, Not Wide</h2>
-        <p>Our work goes beneath the surface — it’s not about quantity of impressions, but the quality of resonance. We build marketing strategies that embed brands into the culture, making people feel something real.</p>
-      </div>
-    </div>
-
-    <div class="service-block">
-      <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1000&q=80" alt="Long-term branding">
-      <div>
-        <h2>Built to Last</h2>
-        <p>We don't do disposable marketing. We build brand identities and campaigns with longevity — designed to evolve, grow, and sustain relevance beyond a single campaign cycle.</p>
-      </div>
-    </div>
-
-    <div class="service-block reverse">
-      <img src="https://images.unsplash.com/photo-1556761175-129418cb2dfe?auto=format&fit=crop&w=1000&q=80" alt="Creative Strategy">
-      <div>
-        <h2>Play Loud, Stay Sharp</h2>
-        <p>We believe creativity without clarity is noise. Our campaigns are bold but purposeful — blending experimental thinking with strategic sharpness. It’s how we stay impactful in fast-moving markets.</p>
-      </div>
-    </div>
+  <section class="section" data-aos="fade-up" data-aos-delay="300">
+    <h2>We Focus On:</h2>
+    <p><strong>⚡ Viral Content</strong> — Standout creative that sparks shares<br/>
+       <strong>📈 Growth Tactics</strong> — Data-backed strategy meets bold execution<br/>
+       <strong>🧠 Brand Positioning</strong> — Rooted in insights, delivered with clarity</p>
   </section>
 
   <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-left">
-        <p>Contact us: <a href="mailto:hello@underdog.agency">hello@underdog.agency</a></p>
-      </div>
-      <div class="footer-right">
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-    </div>
+    <p>© 2025 Underdog Agency · <a href="index.html">Back to Home</a></p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ once: true, duration: 1000 });</script>
 </body>
 </html>
