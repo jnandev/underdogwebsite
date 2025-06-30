@@ -2,115 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Product Launch | Underdog Agency</title>
-
-  <!-- Styles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Launch – Underdog Agency</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <style>
+    .hero-banner {
+      background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    .hero-banner h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px 40px;
+      border-radius: 8px;
+    }
+    .section {
+      padding: 80px 40px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+      color: #f1f1f1;
+    }
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+    .section img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-
-  <!-- Header -->
-  <header id="navbar">
-    <div class="navbar-container">
-      <div class="logo-left">Underdog Agency</div>
-      <div class="logo-center">
-        <img src="underdog.jpeg" alt="Underdog Logo" />
-      </div>
-      <div class="right-group">
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="philosophy.html">Philosophy</a>
-          <a href="#blog">Blog</a>
-        </nav>
-        <label class="switch">
-          <input type="checkbox" id="theme-toggle" />
-          <span class="slider"></span>
-        </label>
-      </div>
-    </div>
+  <header class="navbar-container">
+    <div class="logo-left"><a href="index.html">.Underdog</a></div>
   </header>
 
-  <main class="inner-page">
-    <section class="hero" style="padding-top: 100px;">
-      <h1>From Stealth to Spotlight</h1>
-      <p>
-        We launch products with boldness, clarity, and cultural timing —
-        built to disrupt and designed to last.
-      </p>
-      <img src="https://images.unsplash.com/photo-1581090700227-1f9d6aab00b5?auto=format&fit=crop&w=900&q=80" alt="Product Launch Planning" style="margin-top: 30px; border-radius: 10px;" />
-    </section>
+  <section class="hero-banner" data-aos="fade">
+    <h1>Launch Bold. Launch Right.</h1>
+  </section>
 
-    <section style="padding: 60px 20px;">
-      <h2>Strategic Pre-Launch</h2>
-      <p>
-        We obsess over the details before the world sees them. Messaging, positioning, channels, timing — it’s all part of our launch lab.
-      </p>
-      <img src="https://images.unsplash.com/photo-1630409347101-9c40dbf8dc71?auto=format&fit=crop&w=900&q=80" alt="Launch Strategy Session" style="margin-top: 20px; border-radius: 10px;" />
-    </section>
+  <section class="section" data-aos="fade-up">
+    <h2>Built for Impact from Day One</h2>
+    <p>From idea to execution, we engineer brand launches with precision, clarity, and cultural timing. Our team goes deep on positioning, messaging, and storytelling — so your product doesn’t just go live, it lands with power.</p>
+    <img src="https://images.unsplash.com/photo-1573166364684-83b6ad27006a?auto=format&fit=crop&w=1200&q=80" alt="Launch Planning" />
+  </section>
 
-    <section style="padding: 60px 20px;">
-      <h2>Momentum from Day One</h2>
-      <p>
-        Our launches are engineered for maximum cultural resonance. We find the emotional core, plant the seed, and let it ripple across media, influencers, and community.
-      </p>
-    </section>
+  <section class="section" data-aos="fade-up" data-aos-delay="300">
+    <h2>Launch Process</h2>
+    <p>
+      <strong>🧭 Strategy First</strong> — Deep market research, audience clarity<br/>
+      <strong>💬 Messaging Lab</strong> — Crafting stories that resonate<br/>
+      <strong>🧩 Creative Assets</strong> — From decks to launch websites<br/>
+      <strong>🚀 Go-to-Market</strong> — Outreach, PR, influencers, momentum
+    </p>
+  </section>
 
-    <section style="padding: 60px 20px;">
-      <h2>Our Launch Process</h2>
-      <ul style="list-style: none; padding-left: 0;">
-        <li><strong>01.</strong> Market Research & Positioning</li>
-        <li><strong>02.</strong> Messaging & Visual Identity</li>
-        <li><strong>03.</strong> Campaign Assets & Launch Website</li>
-        <li><strong>04.</strong> Community & Influencer Outreach</li>
-        <li><strong>05.</strong> Press, Content & Growth</li>
-      </ul>
-    </section>
+  <section class="section" data-aos="fade-up" data-aos-delay="500">
+    <h2>Let’s Launch Something Iconic</h2>
+    <p>Whether you're building in stealth or scaling to the moon — we'll help your product arrive with intention and excitement.</p>
+    <a href="contact.html">Start Your Launch →</a>
+  </section>
 
-    <section style="padding: 60px 20px; text-align: center;">
-      <h2>Let’s Launch Something Iconic.</h2>
-      <p>Your idea deserves a killer debut. We'll help it land with impact.</p>
-      <a href="contact.html" class="read-more">Start Your Launch →</a>
-    </section>
-  </main>
-
-  <!-- Footer -->
   <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-left">
-        <p>Contact us: <a href="mailto:hello@underdog.agency">hello@underdog.agency</a></p>
-      </div>
-      <div class="footer-right">
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-    </div>
+    <p>© 2025 Underdog Agency · <a href="index.html">Back to Home</a></p>
   </footer>
 
-  <!-- Theme Toggle -->
-  <script>
-    const toggle = document.getElementById("theme-toggle");
-    const currentTheme = localStorage.getItem("theme");
-
-    if (currentTheme === "light") {
-      document.body.classList.add("light-mode");
-      toggle.checked = true;
-    }
-
-    toggle.addEventListener("change", () => {
-      if (toggle.checked) {
-        document.body.classList.add("light-mode");
-        localStorage.setItem("theme", "light");
-      } else {
-        document.body.classList.remove("light-mode");
-        localStorage.setItem("theme", "dark");
-      }
-    });
-  </script>
-
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ once: true, duration: 1000 });</script>
 </body>
 </html>
