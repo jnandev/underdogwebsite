@@ -2,107 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Deep, Not Wide | Underdog Agency</title>
-
-  <!-- Fonts & Styles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deep Not Wide – Underdog Agency</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <style>
+    .hero-banner {
+      background-image: url('https://images.unsplash.com/photo-1603575447561-7595f01f1831?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    .hero-banner h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px 40px;
+      border-radius: 8px;
+    }
+    .section {
+      padding: 80px 40px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+      color: #f1f1f1;
+    }
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+    .section img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-
-  <!-- Header -->
-  <header id="navbar">
-    <div class="navbar-container">
-      <div class="logo-left">.Underdog</div>
-      <div class="logo-center">
-        <img src="underdog.jpeg" alt="Underdog Logo" />
-      </div>
-      <div class="right-group">
-        <nav>
-          <a href="index.html#hero">Home</a>
-          <a href="index.html#services">Services</a>
-          <a href="index.html#philosophy">Philosophy</a>
-          <a href="index.html#blog">Blog</a>
-        </nav>
-        <label class="switch">
-          <input type="checkbox" id="theme-toggle">
-          <span class="slider"></span>
-        </label>
-      </div>
-    </div>
+  <header class="navbar-container">
+    <div class="logo-left"><a href="index.html">.Underdog</a></div>
   </header>
 
-  <!-- Article -->
-  <section class="blog-article">
-    <h1 data-aos="fade-up">Deep, Not Wide</h1>
-    <div class="meta" data-aos="fade-up" data-aos-delay="200">Underdog Philosophy · June 2025</div>
-    
-    <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80" alt="Deep strategy" style="width:100%; border-radius:12px; margin: 40px 0;" data-aos="fade-up" data-aos-delay="400"/>
-
-    <p data-aos="fade-up" data-aos-delay="500">
-      Attention is cheap. Depth is rare. At Underdog, we don’t spray and pray — we go deep. We create ideas that take root in culture, carve emotional grooves, and compel your audience to care long after the scroll.
-    </p>
-
-    <p data-aos="fade-up" data-aos-delay="600">
-      Going wide is about impressions. Going deep is about impact. We work with brands who aren't just looking for likes — they're building loyalty, belief, and movement. Our content doesn’t skim — it sinks in.
-    </p>
-
-    <blockquote data-aos="fade-up" data-aos-delay="700">
-      “Depth, not breadth, is the measure of real value.” — Friedrich Nietzsche
-    </blockquote>
-
-    <p data-aos="fade-up" data-aos-delay="800">
-      We study your story. We dissect the culture. We craft work that doesn’t chase relevance — it builds it. We embed ideas into hearts, not just feeds. It’s not about mass attention. It’s about the right attention.
-    </p>
-
-    <img src="https://images.unsplash.com/photo-1532635212-4d8a3f929b93?auto=format&fit=crop&w=1200&q=80" alt="Impactful ideas" style="width:100%; border-radius:12px; margin: 40px 0;" data-aos="fade-up" data-aos-delay="900"/>
-
-    <p data-aos="fade-up" data-aos-delay="1000">
-      We don't make noise. We create resonance. Because brands that go deep, endure. And that's the kind of legacy worth building.
-    </p>
-
-    <a href="index.html#philosophy" class="back-link" data-aos="fade-up" data-aos-delay="1100">← Back to Philosophy</a>
+  <section class="hero-banner" data-aos="fade">
+    <h1>Deep, Not Wide</h1>
   </section>
 
-  <!-- Footer -->
+  <section class="section" data-aos="fade-up">
+    <h2>We Don’t Skim. We Dive.</h2>
+    <p>In a world obsessed with reach, we go deep. Depth leads to real resonance—culturally, emotionally, strategically. It’s how ideas become movements and audiences become communities.</p>
+    <img src="https://images.unsplash.com/photo-1549921296-3a6b8f49f6c0?auto=format&fit=crop&w=1200&q=80" alt="Deep Strategy" />
+  </section>
+
+  <section class="section" data-aos="fade-up" data-aos-delay="300">
+    <h2>Our Deep Approach</h2>
+    <p><strong>🔍 Cultural Relevance</strong> — We study the roots, not just trends.<br/>
+       <strong>💡 Emotional Resonance</strong> — We find the core message that moves hearts.<br/>
+       <strong>🔗 Connected Strategy</strong> — Our ideas link meaningfully across platforms and audiences.</p>
+  </section>
+
   <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-left">
-        <p>Contact us: <a href="mailto:hello@underdog.agency">hello@underdog.agency</a></p>
-      </div>
-      <div class="footer-right">
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-    </div>
+    <p>© 2025 Underdog Agency · <a href="index.html">Back to Home</a></p>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-
-    const toggle = document.getElementById("theme-toggle");
-    const currentTheme = localStorage.getItem("theme");
-
-    if (currentTheme === "light") {
-      document.body.classList.add("light-mode");
-      toggle.checked = true;
-    }
-
-    toggle.addEventListener("change", () => {
-      if (toggle.checked) {
-        document.body.classList.add("light-mode");
-        localStorage.setItem("theme", "light");
-      } else {
-        document.body.classList.remove("light-mode");
-        localStorage.setItem("theme", "dark");
-      }
-    });
-  </script>
+  <script>AOS.init({ once: true, duration: 1000 });</script>
 </body>
 </html>
