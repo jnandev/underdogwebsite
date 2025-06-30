@@ -3,19 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Marketing Services | Underdog Agency</title>
-
-  <!-- Styles -->
+  <title>Marketing – Underdog Agency</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- AOS Animate On Scroll -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
 <body>
-
-  <!-- Header -->
   <header id="navbar">
     <div class="navbar-container">
       <div class="logo-left"><a href="index.html">.Underdog</a></div>
@@ -29,55 +21,49 @@
           <a href="philosophy.html">Philosophy</a>
           <a href="index.html#blog">Blog</a>
         </nav>
-        <label class="switch">
-          <input type="checkbox" id="theme-toggle">
-          <span class="slider"></span>
-        </label>
       </div>
     </div>
   </header>
 
-  <!-- Hero Banner -->
-  <section class="hero service-hero" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1500&q=80'); background-size: cover; background-position: center;">
-    <div class="overlay">
-      <h1 data-aos="fade-up">Marketing That Moves</h1>
-      <p data-aos="fade-up" data-aos-delay="200">We create campaigns that connect, captivate, and convert.</p>
+  <section class="service-detail hero-small">
+    <h1>Marketing</h1>
+    <p>Turning bold ideas into brand movements that stick.</p>
+  </section>
+
+  <section class="service-body">
+    <div class="service-block">
+      <img src="https://images.unsplash.com/photo-1612832021590-9fe0f2d7e84f?auto=format&fit=crop&w=1000&q=80" alt="Marketing Strategy">
+      <div>
+        <h2>Story Over Hype</h2>
+        <p>We don’t chase trends. We craft narratives that stick — stories are what build empires and drive connection. With storytelling as the foundation, we help brands earn emotional real estate in people’s lives.</p>
+      </div>
+    </div>
+
+    <div class="service-block reverse">
+      <img src="https://images.unsplash.com/photo-1564866657319-06af73a08c33?auto=format&fit=crop&w=1000&q=80" alt="Culture Building">
+      <div>
+        <h2>Deep, Not Wide</h2>
+        <p>Our work goes beneath the surface — it’s not about quantity of impressions, but the quality of resonance. We build marketing strategies that embed brands into the culture, making people feel something real.</p>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1000&q=80" alt="Long-term branding">
+      <div>
+        <h2>Built to Last</h2>
+        <p>We don't do disposable marketing. We build brand identities and campaigns with longevity — designed to evolve, grow, and sustain relevance beyond a single campaign cycle.</p>
+      </div>
+    </div>
+
+    <div class="service-block reverse">
+      <img src="https://images.unsplash.com/photo-1556761175-129418cb2dfe?auto=format&fit=crop&w=1000&q=80" alt="Creative Strategy">
+      <div>
+        <h2>Play Loud, Stay Sharp</h2>
+        <p>We believe creativity without clarity is noise. Our campaigns are bold but purposeful — blending experimental thinking with strategic sharpness. It’s how we stay impactful in fast-moving markets.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Service Content -->
-  <section class="service-details">
-    <div class="container">
-      <h2 data-aos="fade-up">We Build Bold Brands</h2>
-      <p data-aos="fade-up" data-aos-delay="100">
-        Marketing isn't just about reach. It's about resonance. At Underdog, we help brands rise from noise with messaging that matters and storytelling that sticks.
-      </p>
-      <div class="image-block" data-aos="fade-up" data-aos-delay="200">
-        <img src="https://images.unsplash.com/photo-1607082352274-00502e4b252b?auto=format&fit=crop&w=1200&q=80" alt="Marketing Impact">
-      </div>
-
-      <h3 data-aos="fade-up" data-aos-delay="300">How We Do It</h3>
-      <ul class="service-list" data-aos="fade-up" data-aos-delay="400">
-        <li>↳ Campaign Strategy & Execution</li>
-        <li>↳ Social Media Positioning</li>
-        <li>↳ Cultural & Trend-Driven Creative</li>
-        <li>↳ Community Building</li>
-        <li>↳ Data-Backed Performance Insights</li>
-      </ul>
-
-      <div class="image-block" data-aos="fade-up" data-aos-delay="500">
-        <img src="https://images.unsplash.com/photo-1581093588401-4cb7b2c8d0fc?auto=format&fit=crop&w=1200&q=80" alt="Marketing Strategy">
-      </div>
-
-      <p data-aos="fade-up" data-aos-delay="600">
-        Whether you're launching your first product or scaling your reach, our marketing strategies are crafted to make brands unforgettable — and unignorable.
-      </p>
-
-      <a href="contact.html" class="cta-button" data-aos="fade-up" data-aos-delay="700">Let's Collaborate →</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-left">
@@ -90,36 +76,5 @@
       </div>
     </div>
   </footer>
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-
-    // Theme toggle with persistence
-    const toggle = document.getElementById("theme-toggle");
-    const currentTheme = localStorage.getItem("theme");
-
-    if (currentTheme === "light") {
-      document.body.classList.add("light-mode");
-      toggle.checked = true;
-    }
-
-    toggle.addEventListener("change", () => {
-      if (toggle.checked) {
-        document.body.classList.add("light-mode");
-        localStorage.setItem("theme", "light");
-      } else {
-        document.body.classList.remove("light-mode");
-        localStorage.setItem("theme", "dark");
-      }
-    });
-
-    // Navbar scroll background
-    window.addEventListener('scroll', () => {
-      const nav = document.getElementById('navbar');
-      nav.classList.toggle('scrolled', window.scrollY > 30);
-    });
-  </script>
 </body>
 </html>
