@@ -2,58 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services | Underdog Agency</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services – Underdog Agency</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
 <body>
-  <header>
-    <div class="navbar-container">
-      <div class="logo-left">Underdog Agency</div>
-      <div class="logo-center"><img src="underdog.jpeg" alt="Logo" /></div>
+
+<header id="navbar">
+  <div class="navbar-container">
+    <div class="logo-left"><a href="index.html">.Underdog</a></div>
+    <div class="logo-center">
+      <a href="index.html"><img src="underdog.jpeg" alt="Underdog Logo" /></a>
+    </div>
+    <div class="right-group">
       <nav>
-        <a href="index.html">Home</a>
+        <a href="index.html#hero">Home</a>
         <a href="services.html">Services</a>
         <a href="philosophy.html">Philosophy</a>
-        <a href="blog.html">Blog</a>
+        <a href="index.html#blog">Blog</a>
       </nav>
     </div>
-  </header>
+  </div>
+</header>
 
-  <section class="services">
-    <div class="services-header">
-      <h2>Our Core Services</h2>
-      <p>Explore the pillars of our work at Underdog Agency</p>
-    </div>
-    <div class="services-grid">
-      <a href="marketing.html" class="service-card">
-        <h3>Marketing</h3>
-        <p>High-impact campaigns, SEO, performance ads, and more.</p>
-      </a>
-      <a href="product-launch.html" class="service-card">
-        <h3>Product Launch</h3>
-        <p>From planning to launch – we’ll take your product to market right.</p>
-      </a>
-      <a href="strategy.html" class="service-card">
-        <h3>Strategy</h3>
-        <p>Business clarity, brand positioning, and scale-ready strategy.</p>
-      </a>
-    </div>
-  </section>
+<section class="services" id="services">
+  <div class="services-header">
+    <h2 data-aos="fade-up">What We Do</h2>
+    <p data-aos="fade-up" data-aos-delay="200">Creative strategies to build brands and deliver impact.</p>
+  </div>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="contact-info">
-        <p>Email us: <a href="mailto:contact@underdog.agency">contact@underdog.agency</a></p>
-      </div>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </div>
-  </footer>
+  <div class="services-grid">
+    <a href="marketing.html" class="service-card" data-aos="fade-up" data-aos-delay="400">
+      <h3>Marketing</h3>
+      <p>Turning bold ideas into brand movements that stick.</p>
+    </a>
 
-  <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <a href="product-launch.html" class="service-card" data-aos="fade-up" data-aos-delay="600">
+      <h3>Product Launch</h3>
+      <p>From stealth to spotlight — we shape, package, and launch products that punch above their weight.</p>
+    </a>
+
+    <a href="strategy.html" class="service-card" data-aos="fade-up" data-aos-delay="800">
+      <h3>Strategy</h3>
+      <p>We architect brand moves with precision, clarity, and long-term firepower.</p>
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <p>Contact us: <a href="mailto:hello@underdog.agency">hello@underdog.agency</a></p>
+    </div>
+    <div class="footer-right">
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+
 </body>
 </html>
