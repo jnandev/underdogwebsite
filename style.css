@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: white;
+}
+
 a:hover {
   opacity: 0.8;
 }
@@ -34,6 +38,10 @@ body.light-mode {
 }
 
 body.light-mode a {
+  color: #111;
+}
+
+body.light-mode a:visited {
   color: #111;
 }
 
@@ -156,6 +164,97 @@ input:checked + .slider:before {
   50% { transform: translateY(10px); }
 }
 
+/* Services Section */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services-header h2,
+.services-header p {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.services-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #1a1a1a;
+  padding: 30px 20px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #444;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.service-card:hover {
+  background-color: #2c2c2c;
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  color: white;
+}
+
+.service-card p {
+  color: #ccc;
+  font-size: 0.95em;
+}
+
+/* Philosophy */
+.philosophy {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.philosophy-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.philosophy-header p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.belief {
+  background-color: #1a1a1a;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.belief:hover {
+  transform: translateY(-5px);
+}
+
+.belief h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.belief p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
 /* Blog Section */
 .blog {
   padding: 80px 20px;
@@ -261,16 +360,6 @@ input:checked + .slider:before {
     gap: 15px;
   }
 
-  .hero-line {
-    font-size: 2rem;
-  }
-
-  .blog-grid {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 768px) {
-  /* Fix nav */
   header {
     flex-direction: column;
     padding: 16px 20px;
@@ -290,9 +379,8 @@ input:checked + .slider:before {
     justify-content: center;
   }
 
-  /* Text resizing */
   .hero-line {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .subheading {
@@ -325,11 +413,8 @@ input:checked + .slider:before {
     font-size: 0.95rem;
   }
 
-  /* Footer alignment */
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
+  .blog-grid {
+    grid-template-columns: 1fr;
   }
 
   .footer-right a {
@@ -337,48 +422,7 @@ input:checked + .slider:before {
     font-size: 1.2rem;
   }
 }
-.services {
-  padding: 60px 20px;
-  text-align: center;
-}
 
-.services-header h2,
-.services-header p {
-  color: white;
-  margin-bottom: 15px;
-}
-
-.services-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.service-card {
-  background-color: #1a1a1a;
-  padding: 30px 20px;
-  border-radius: 10px;
-  color: white;
-  text-decoration: none;
-  border: 1px solid #444;
-  transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.service-card:hover {
-  background-color: #2c2c2c;
-  transform: translateY(-5px);
-}
-
-.service-card h3 {
-  margin-bottom: 10px;
-  font-size: 1.3em;
-  color: white;
-}
-
-.service-card p {
-  color: #ccc;
-  font-size: 0.95em;
-}
 @media (min-width: 768px) {
   .services-grid {
     flex-direction: row;
@@ -389,5 +433,3 @@ input:checked + .slider:before {
     width: 30%;
   }
 }
-
-
