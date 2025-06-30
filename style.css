@@ -85,6 +85,7 @@ body.light-mode a:visited {
   font-weight: 600;
 }
 
+/* Theme Toggle Switch */
 .switch {
   position: relative;
   display: inline-block;
@@ -128,7 +129,7 @@ input:checked + .slider:before {
   transform: translateX(20px);
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
   height: 100vh;
   display: flex;
@@ -162,6 +163,56 @@ input:checked + .slider:before {
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(10px); }
+}
+
+/* Custom Hero for Inner Pages */
+.custom-hero-banner {
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+}
+
+.overlay-text {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.overlay-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.section {
+  padding: 80px 40px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.section img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  margin-bottom: 20px;
 }
 
 /* Services Section */
@@ -420,6 +471,10 @@ input:checked + .slider:before {
   .footer-right a {
     margin: 0 8px;
     font-size: 1.2rem;
+  }
+
+  .overlay-text h1 {
+    font-size: 2rem;
   }
 }
 
