@@ -49,68 +49,6 @@
     <div class="scroll-indicator" id="scrollIcon">↓</div>
   </section>
 
-  <!-- Services -->
-  <section class="services" id="services">
-    <div class="services-header">
-      <h2 data-aos="fade-up">What We Do</h2>
-      <p data-aos="fade-up" data-aos-delay="200">Creative strategies to build brands and deliver impact.</p>
-    </div>
-    <div class="services-grid">
-      <a href="marketing.html">
-        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-          <h3>Marketing</h3>
-          <p>Turning bold ideas into brand movements that stick.</p>
-        </div>
-      </a>
-      <a href="product-launch.html">
-        <div class="service-card" data-aos="fade-up" data-aos-delay="600">
-          <h3>Product Launch</h3>
-          <p>From stealth to spotlight — we shape, package, and launch products that punch above their weight.</p>
-        </div>
-      </a>
-      <a href="strategy.html">
-        <div class="service-card" data-aos="fade-up" data-aos-delay="800">
-          <h3>Strategy</h3>
-          <p>We architect brand moves with precision, clarity, and long-term firepower.</p>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <!-- Philosophy -->
-  <section class="philosophy" id="philosophy">
-    <div class="philosophy-header">
-      <h2 data-aos="fade-up">We Think Like Underdogs</h2>
-      <p data-aos="fade-up" data-aos-delay="200">We believe in bold storytelling, long games, and culture-shaping work that leaves a mark.</p>
-    </div>
-    <div class="philosophy-grid">
-      <a href="story-over-hype.html">
-        <div class="belief" data-aos="fade-up" data-aos-delay="400">
-          <h3>Story Over Hype</h3>
-          <p>We craft narratives that don’t just sell — they stick.</p>
-        </div>
-      </a>
-      <a href="deep-not-wide.html">
-        <div class="belief" data-aos="fade-up" data-aos-delay="600">
-          <h3>Deep, Not Wide</h3>
-          <p>We create brand work that penetrates minds, not just fills feeds.</p>
-        </div>
-      </a>
-      <a href="built-to-last.html">
-        <div class="belief" data-aos="fade-up" data-aos-delay="800">
-          <h3>Built to Last</h3>
-          <p>We think long-term, building identities that grow with you.</p>
-        </div>
-      </a>
-      <a href="play-loud-stay-sharp.html">
-        <div class="belief" data-aos="fade-up" data-aos-delay="1000">
-          <h3>Play Loud, Stay Sharp</h3>
-          <p>We blend creativity and strategy — built for impact, not just impressions.</p>
-        </div>
-      </a>
-    </div>
-  </section>
-
   <!-- Blog -->
   <section class="blog" id="blog">
     <div class="blog-header">
@@ -161,7 +99,7 @@
   <script>
     AOS.init({ duration: 1000, once: true });
 
-    // Theme toggle with persistence
+    // Theme toggle with localStorage
     const toggle = document.getElementById("theme-toggle");
     const currentTheme = localStorage.getItem("theme");
 
@@ -180,22 +118,16 @@
       }
     });
 
-    // Navbar scroll background
+    // Navbar scroll effect
     window.addEventListener('scroll', () => {
       const nav = document.getElementById('navbar');
-      if (window.scrollY > 30) {
-        nav.classList.add('scrolled');
-      } else {
-        nav.classList.remove('scrolled');
-      }
+      nav.classList.toggle('scrolled', window.scrollY > 30);
     });
 
-    // Smooth scroll when ↓ is clicked
+    // Smooth scroll ↓ arrow
     document.getElementById("scrollIcon").addEventListener("click", () => {
-      const servicesSection = document.getElementById("services");
-      if (servicesSection) {
-        servicesSection.scrollIntoView({ behavior: "smooth" });
-      }
+      const blogSection = document.getElementById("blog");
+      blogSection.scrollIntoView({ behavior: "smooth" });
     });
   </script>
 </body>
