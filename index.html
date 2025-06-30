@@ -4,18 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Underdog Agency</title>
-
-  <!-- Styles -->
+  <!-- Styles & Fonts -->
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- AOS Animate On Scroll -->
+  <!-- AOS Library -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
 <body>
-
-  <!-- Header -->
+  <!-- Navbar -->
   <header id="navbar">
     <div class="navbar-container">
       <div class="logo-left">.Underdog</div>
@@ -25,8 +22,8 @@
       <div class="right-group">
         <nav>
           <a href="#hero">Home</a>
-          <a href="services.html">Services</a>
-          <a href="philosophy.html">Philosophy</a>
+          <a href="#services">Services</a>
+          <a href="#philosophy">Philosophy</a>
           <a href="#blog">Blog</a>
         </nav>
         <label class="switch">
@@ -37,7 +34,7 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero" id="hero">
     <div class="hero-lines">
       <div class="hero-line" data-aos="fade-up" data-aos-delay="100">Born In Silence</div>
@@ -47,6 +44,54 @@
       </div>
     </div>
     <div class="scroll-indicator" id="scrollIcon">↓</div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="services-header">
+      <h2 data-aos="fade-up">What We Do</h2>
+      <p data-aos="fade-up" data-aos-delay="200">Creative strategies to build brands and deliver impact.</p>
+    </div>
+    <div class="services-grid">
+      <a href="marketing.html" class="service-card" data-aos="fade-up" data-aos-delay="400">
+        <h3>Marketing</h3>
+        <p>Turning bold ideas into brand movements that stick.</p>
+      </a>
+      <a href="product-launch.html" class="service-card" data-aos="fade-up" data-aos-delay="600">
+        <h3>Product Launch</h3>
+        <p>From stealth to spotlight — we shape, package & launch products that punch above their weight.</p>
+      </a>
+      <a href="strategy.html" class="service-card" data-aos="fade-up" data-aos-delay="800">
+        <h3>Strategy</h3>
+        <p>We architect brand moves with precision, clarity, and long-term firepower.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Philosophy -->
+  <section class="philosophy" id="philosophy">
+    <div class="philosophy-header">
+      <h2 data-aos="fade-up">We Think Like Underdogs</h2>
+      <p data-aos="fade-up" data-aos-delay="200">We believe in bold storytelling, long games, and culture-shaping work that leaves a mark.</p>
+    </div>
+    <div class="philosophy-grid">
+      <a href="story-over-hype.html" class="belief" data-aos="fade-up" data-aos-delay="400">
+        <h3>Story Over Hype</h3>
+        <p>We don’t chase trends. We craft narratives that stick. Stories are what build empires.</p>
+      </a>
+      <a href="deep-not-wide.html" class="belief" data-aos="fade-up" data-aos-delay="600">
+        <h3>Deep, Not Wide</h3>
+        <p>Our work goes beneath the surface. It resonates, roots in culture, and grows with true depth.</p>
+      </a>
+      <a href="built-to-last.html" class="belief" data-aos="fade-up" data-aos-delay="800">
+        <h3>Built to Last</h3>
+        <p>We're not in it for short-term hype. We build brand legacies with substance and staying power.</p>
+      </a>
+      <a href="play-loud-stay-sharp.html" class="belief" data-aos="fade-up" data-aos-delay="1000">
+        <h3>Play Loud, Stay Sharp</h3>
+        <p>We move fast, think smart, and play creatively — with clarity, purpose, and precision.</p>
+      </a>
+    </div>
   </section>
 
   <!-- Blog -->
@@ -84,7 +129,7 @@
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-left">
-        <p>Contact us: <a href="mailto:hello@underdog.agency">hello@underdog.agency</a></p>
+        <p>Contact us: <a href="mailto:contact@underdog.agency">contact@underdog.agency</a></p>
       </div>
       <div class="footer-right">
         <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -94,40 +139,30 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
+  <!-- JS: AOS, theme, navbar, scroll -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 1000, once: true });
 
-    // Theme toggle with localStorage
+    // Theme toggle + persistence
     const toggle = document.getElementById("theme-toggle");
-    const currentTheme = localStorage.getItem("theme");
-
-    if (currentTheme === "light") {
+    if (localStorage.getItem("theme") === "light") {
       document.body.classList.add("light-mode");
       toggle.checked = true;
     }
-
     toggle.addEventListener("change", () => {
-      if (toggle.checked) {
-        document.body.classList.add("light-mode");
-        localStorage.setItem("theme", "light");
-      } else {
-        document.body.classList.remove("light-mode");
-        localStorage.setItem("theme", "dark");
-      }
+      document.body.classList.toggle("light-mode");
+      localStorage.setItem("theme", document.body.classList.contains("light-mode") ? "light" : "dark");
     });
 
-    // Navbar scroll effect
+    // Navbar scroll background
     window.addEventListener('scroll', () => {
-      const nav = document.getElementById('navbar');
-      nav.classList.toggle('scrolled', window.scrollY > 30);
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 30);
     });
 
-    // Smooth scroll ↓ arrow
+    // Smooth scroll on arrow
     document.getElementById("scrollIcon").addEventListener("click", () => {
-      const blogSection = document.getElementById("blog");
-      blogSection.scrollIntoView({ behavior: "smooth" });
+      document.getElementById("services").scrollIntoView({ behavior: 'smooth' });
     });
   </script>
 </body>
