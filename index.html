@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
   <header id="navbar">
@@ -28,9 +29,9 @@
 
   <section class="hero" id="hero">
     <div class="hero-lines">
-      <div class="hero-line" data-aos="fade-up" data-aos-delay="100">Born In Silence</div>
-      <div class="hero-line" data-aos="fade-up" data-aos-delay="400">Built For Spotlight.</div>
-      <div class="subheading" data-aos="fade-up" data-aos-delay="700">
+      <div class="hero-line">Born In Silence</div>
+      <div class="hero-line">Built For Spotlight.</div>
+      <div class="subheading">
         We empower bold brands to be seen, heard, and remembered.
       </div>
     </div>
@@ -118,6 +119,7 @@
   <script>
     AOS.init({ duration: 1000, once: true });
 
+    // Theme toggle
     const toggle = document.getElementById("theme-toggle");
     if (localStorage.getItem("theme") === "light") {
       document.body.classList.add("light-mode");
@@ -129,11 +131,39 @@
       localStorage.setItem("theme", isLight ? "light" : "dark");
     });
 
+    // Navbar scroll
     window.addEventListener('scroll', () => {
       document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 30);
     });
+
+    // Smooth scroll on arrow
     document.getElementById("scrollIcon").addEventListener("click", () => {
       document.getElementById("services").scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // GSAP Animations
+    gsap.from(".hero-line", {
+      opacity: 0,
+      y: 60,
+      duration: 1.2,
+      stagger: 0.2,
+      ease: "power4.out"
+    });
+
+    gsap.from(".subheading", {
+      opacity: 0,
+      y: 40,
+      delay: 0.8,
+      duration: 1.2,
+      ease: "power4.out"
+    });
+
+    gsap.from(".scroll-indicator", {
+      opacity: 0,
+      y: 20,
+      delay: 1.2,
+      duration: 1,
+      ease: "power4.out"
     });
   </script>
 </body>
