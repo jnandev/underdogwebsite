@@ -4,16 +4,63 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Underdog Agency</title>
-
-  <!-- Fonts + Styles -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <style>
+    /* Background Video Styles */
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.15;
+    }
+
+    .hero-lines {
+      z-index: 1;
+    }
+
+    .hero-line {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .subheading {
+      font-size: 1.2rem;
+      font-weight: 400;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    .scroll-indicator {
+      font-size: 2rem;
+      margin-top: 40px;
+      cursor: pointer;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(10px); }
+    }
+  </style>
 </head>
 <body>
-
-  <!-- Header / Navbar -->
   <header id="navbar">
     <div class="navbar-container">
       <div class="logo-left">.Underdog</div>
@@ -25,117 +72,95 @@
           <a href="#philosophy">Philosophy</a>
           <a href="#blog">Blog</a>
         </nav>
-        <label class="switch">
-          <input type="checkbox" id="theme-toggle">
-          <span class="slider"></span>
-        </label>
+        <label class="switch"><input type="checkbox" id="theme-toggle"><span class="slider"></span></label>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section with Video Background -->
   <section class="hero" id="hero">
-    <!-- Background Video -->
-    <video class="hero-bg" autoplay muted loop playsinline>
-      <source src="underdog-hero.mp4" type="video/mp4">
-      <!-- fallback if video not supported -->
+    <!-- Subtle Background Video -->
+    <video autoplay muted loop playsinline>
+      <source src="https://cdn.coverr.co/videos/coverr-building-lights-1867/1080p.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
     </video>
-    <div class="hero-fallback"></div>
 
-    <!-- Overlay Content -->
     <div class="hero-lines">
-      <div class="hero-line">Born In Silence</div>
-      <div class="hero-line">Built For Spotlight.</div>
-      <div class="subheading">We empower bold brands to be seen, heard, and remembered.</div>
+      <div class="hero-line" id="line1">Born In Silence</div>
+      <div class="hero-line" id="line2">Built For Spotlight.</div>
+      <div class="subheading" id="subheading">We empower bold brands to be seen, heard, and remembered.</div>
+      <div class="scroll-indicator" id="scrollIcon">↓</div>
     </div>
-    <div class="scroll-indicator" id="scrollIcon">↓</div>
   </section>
 
-  <!-- Services Section -->
   <section class="services" id="services">
     <div class="services-header">
-      <h2 data-aos="fade-up">What We Do</h2>
-      <p data-aos="fade-up" data-aos-delay="200">Creative strategies to build brands and deliver impact.</p>
+      <h2>What We Do</h2>
+      <p>Creative strategies to build brands and deliver impact.</p>
     </div>
     <div class="services-grid">
-      <a href="marketing.html" class="service-card" data-aos="fade-up" data-aos-delay="400">
-        <h3>Marketing</h3>
-        <p>Turning bold ideas into brand movements that stick.</p>
+      <a href="marketing.html" class="service-card">
+        <h3>Marketing</h3><p>Turning bold ideas into brand movements that stick.</p>
       </a>
-      <a href="product-launch.html" class="service-card" data-aos="fade-up" data-aos-delay="600">
-        <h3>Product Launch</h3>
-        <p>From stealth to spotlight — we shape, package & launch products that punch above their weight.</p>
+      <a href="product-launch.html" class="service-card">
+        <h3>Product Launch</h3><p>From stealth to spotlight — we shape, package & launch products that punch above their weight.</p>
       </a>
-      <a href="strategy.html" class="service-card" data-aos="fade-up" data-aos-delay="800">
-        <h3>Strategy</h3>
-        <p>We architect brand moves with precision, clarity, & long-term firepower.</p>
+      <a href="strategy.html" class="service-card">
+        <h3>Strategy</h3><p>We architect brand moves with precision, clarity, & long-term firepower.</p>
       </a>
     </div>
   </section>
 
-  <!-- Philosophy Section -->
   <section class="philosophy" id="philosophy">
     <div class="philosophy-header">
-      <h2 data-aos="fade-up">We Think Like Underdogs</h2>
-      <p data-aos="fade-up" data-aos-delay="200">We believe in bold storytelling, long games, and culture-shaping work.</p>
+      <h2>We Think Like Underdogs</h2>
+      <p>We believe in bold storytelling, long games, and culture-shaping work.</p>
     </div>
     <div class="philosophy-grid">
-      <a href="story-over-hype.html" class="belief" data-aos="fade-up" data-aos-delay="400">
-        <h3>Story Over Hype</h3>
-        <p>We don’t chase trends. We craft narratives that stick—stories are what build empires.</p>
+      <a href="story-over-hype.html" class="belief">
+        <h3>Story Over Hype</h3><p>We don’t chase trends. We craft narratives that stick—stories are what build empires.</p>
       </a>
-      <a href="deep-not-wide.html" class="belief" data-aos="fade-up" data-aos-delay="600">
-        <h3>Deep, Not Wide</h3>
-        <p>Our work goes beneath the surface—it resonates, roots, and grows culturally.</p>
+      <a href="deep-not-wide.html" class="belief">
+        <h3>Deep, Not Wide</h3><p>Our work goes beneath the surface—it resonates, roots, and grows culturally.</p>
       </a>
-      <a href="built-to-last.html" class="belief" data-aos="fade-up" data-aos-delay="800">
-        <h3>Built to Last</h3>
-        <p>We're in it for long-term impact, building legacies with substance and staying power.</p>
+      <a href="built-to-last.html" class="belief">
+        <h3>Built to Last</h3><p>We're in it for long-term impact, building legacies with substance and staying power.</p>
       </a>
-      <a href="play-loud-stay-sharp.html" class="belief" data-aos="fade-up" data-aos-delay="1000">
-        <h3>Play Loud, Stay Sharp</h3>
-        <p>We move fast, think smart, and play creatively—with clarity, purpose, & precision.</p>
+      <a href="play-loud-stay-sharp.html" class="belief">
+        <h3>Play Loud, Stay Sharp</h3><p>We move fast, think smart, and play creatively—with clarity, purpose, & precision.</p>
       </a>
     </div>
   </section>
 
-  <!-- Blog Section -->
   <section class="blog" id="blog">
     <div class="blog-header">
-      <h2 data-aos="fade-up">Insights from the Underdogs</h2>
-      <p data-aos="fade-up" data-aos-delay="200">Ideas. Experiments. Wins. All written by us.</p>
+      <h2>Insights from the Underdogs</h2>
+      <p>Ideas. Experiments. Wins. All written by us.</p>
     </div>
     <div class="blog-grid">
-      <div class="blog-post" data-aos="fade-up" data-aos-delay="400">
+      <div class="blog-post">
         <img src="https://images.unsplash.com/photo-1519337265831-281ec6cc8514?auto=format&fit=crop&w=800&q=80" alt="Story vs Strategy">
-        <h3>Why Storytelling Beats Strategy</h3>
-        <p>Stories win hearts; here’s why narrative trumps playbook.</p>
+        <h3>Why Storytelling Beats Strategy</h3><p>Stories win hearts; here’s why narrative trumps playbook.</p>
         <span class="meta">By Team Underdog · June 2025</span>
         <a href="blog-post.html" class="read-more">Read more →</a>
       </div>
-      <div class="blog-post" data-aos="fade-up" data-aos-delay="600">
+      <div class="blog-post">
         <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" alt="No Budget Branding">
-        <h3>Building a Brand with No Budget</h3>
-        <p>How a scrappy music label grew without ad spend.</p>
+        <h3>Building a Brand with No Budget</h3><p>How a scrappy music label grew without ad spend.</p>
         <span class="meta">By Dev · May 2025</span>
         <a href="blog-post-2.html" class="read-more">Read more →</a>
       </div>
-      <div class="blog-post" data-aos="fade-up" data-aos-delay="800">
+      <div class="blog-post">
         <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Product Launch">
-        <h3>The Future of Launching Products</h3>
-        <p>Stealth-to-spotlight isn’t just a trend—it’s a necessity.</p>
+        <h3>The Future of Launching Products</h3><p>Stealth-to-spotlight isn’t just a trend—it’s a necessity.</p>
         <span class="meta">By Team Underdog · April 2025</span>
         <a href="blog-post-3.html" class="read-more">Read more →</a>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-content">
-      <div class="footer-left">
-        <p>Contact us: <a href="mailto:contact@underdog.agency">contact@underdog.agency</a></p>
-      </div>
+      <div class="footer-left"><p>Contact us: <a href="mailto:contact@underdog.agency">contact@underdog.agency</a></p></div>
       <div class="footer-right">
         <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
         <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -145,9 +170,14 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script>
-    AOS.init({ duration: 1000, once: true });
+    // GSAP animation for hero
+    window.addEventListener('DOMContentLoaded', () => {
+      gsap.from("#line1", { opacity: 0, y: -30, duration: 1 });
+      gsap.from("#line2", { opacity: 0, y: -30, duration: 1, delay: 0.3 });
+      gsap.from("#subheading", { opacity: 0, y: 20, duration: 1, delay: 0.6 });
+    });
 
     const toggle = document.getElementById("theme-toggle");
     if (localStorage.getItem("theme") === "light") {
